@@ -1,0 +1,42 @@
+body {
+    /* background: linear-gradient(to right, #000000, #545454); */
+    background: url(../Images/portfolio-bg.jpg
+    ) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container > * > h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 8px black;
+}
+
+.container > * > a > button {
+    margin-top: 30px;
+    border: none;
+    transition: all 0.4s ease;
+}
+
+.container > * > a {
+    text-decoration: none;
+    color: white;
+    line-height: 2.5rem;
+    padding: 0;
+}
+
+.container > * > a > button:hover {
+    background-color: chocolate;
+    transform: scale(1.1);
+    color: chocolate;
+    text-shadow: #000 0px 0px 5px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+}

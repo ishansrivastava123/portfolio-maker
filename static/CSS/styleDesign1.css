@@ -1,0 +1,134 @@
+body {
+    background: url("https://images.unsplash.com/photo-1512950050685-b1d4ae63d2df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.frames {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.frame1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #414141;
+    color: white;
+    padding-top: 30px;
+    height: 100vh;
+}
+
+.frame1 > img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 165px;
+    height: 165px;
+    margin-bottom: 20px;
+}
+
+.about, .links {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid #666;
+}
+
+.about > p, .links > p {
+    font-size: 0.85rem;
+}
+
+.links > h4 {
+    margin-bottom: 15px;
+}
+
+.links > h6 {
+    margin-bottom: 3px;
+    font-size: 0.9rem;
+}
+
+.frame2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20%;
+    width: 90%;
+    margin: 20px auto 40px;
+    padding-bottom: 30px;
+    border-bottom: 1.5px solid #888;
+}
+
+.name > * {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.name > h1 {
+    font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+    transform: scale(1, 1.2);
+    letter-spacing: 1px;
+}
+
+.name > h6 {
+    margin-top: 10px;
+    font-family: 'Syne', sans-serif;
+    font-stretch: ultra-expanded;
+}
+
+.details {
+    margin: auto;
+}
+
+.details > *:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.education, .skills {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.education > *, .skills > * {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education > * > *, .skills > * > * {
+    margin-bottom: 2px;
+}
+
+.education {
+    margin-bottom: 20px;
+}
+
+.education > * > h5 {
+    margin-bottom: 8px;
+}

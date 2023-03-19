@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/CSS/styleForm.css">
+        <link rel="icon" href="static/Images/icon.png">
+        <title>Form</title>
+        <script src="https://kit.fontawesome.com/4702aabb36.js" crossorigin="anonymous" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Online Portfolio Maker -&nbsp;<span id="page"></span></h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="personal active">
+                <div class="info">
+                    <label for="firstname" class="form-label">First Name <span>*</span></label>
+                    <input type="text" name="firstname" class="form-control" placeholder="Please Enter Your First Name" id="firstname" required>
+                </div>
+                
+                <div class="info">
+                    <label for="lastname" class="form-label">Last Name <span>*</span></label>
+                    <input type="text" name="lastname" class="form-control" placeholder="Please Enter Your Last Name" id="lastname" required>
+                </div>
+                
+                <div class="input-group info">
+                    <div class="custom-file">
+                        <p>Please Upload A Profile Picture <span>*</span></p>
+                        <input type="file" name="dp" accept="image/*" class="custom-file-input" id="dp" required>
+                        <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+                    </div>
+                </div>
+                
+                <div class="nav1">
+                    <button type="button" class="btn btn-success">Next&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            
+            <div class="education">
+                <div class="info">
+                    <label for="school" class="form-label">School Name <span>*</span></label>
+                    <input type="text" name="school" class="form-control" placeholder="Please Enter Your School Name" id="school" required>
+                </div>
+                
+                <div class="info">
+                    <label for="college" class="form-label">College Name (optional)</label>
+                    <input type="text" name="college" class="form-control" placeholder="Please Enter Your College Name" id="college">
+                </div>
+                
+                <div class="nav">
+                    <button type="button" class="btn btn-danger">Back&nbsp;<i class="fa-solid fa-arrow-left"></i></button>
+                    <button type="button" class="btn btn-success"">Next&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            
+            <div class="contact">
+                <div class="info">
+                    <label for="address" class="form-label">Address <span>*</span></label>
+                    <input type="text" name="address" class="form-control" placeholder="Please Enter Your Address" id="address" required>
+                </div>
+                
+                <div class="info">
+                    <label for="phone" class="form-label">Phone No. <span>*</span></label>
+                    <input type="tel" name="phone" class="form-control" placeholder="0111222333" id="phone" required>
+                </div>
+                
+                <div class="info">
+                    <label for="email" class="form-label">Email <span>*</span></label>
+                    <input type="email" name="email" class="form-control" placeholder="your@email.com" id="email" required>
+                </div>
+                
+                <div class="nav">
+                    <button type="button" class="btn btn-danger">Back&nbsp;<i class="fa-solid fa-arrow-left"></i></button>
+                    <button type="button" class="btn btn-success">Next&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            
+            <div class="profession">
+                <div class="info">
+                    <label for="designation" class="form-label">Designation <span>*</span></label>
+                    <input type="text" name="designation" class="form-control" placeholder="Please Enter Your Designation" id="designation" required>
+                </div>
+                
+                <div class="topSkills">
+                    <div class="info">
+                        <label for="skill1" class="form-label">Enter Your Skills <span>*</span></label>
+                        <input type="text" name="skill1" class="form-control" placeholder="Web Developer" id="skill1" required>    
+                    </div>
+                    
+                    <div class="info">
+                        <label for="skill2" class="form-label">Enter Your Skills <span>*</span></label>
+                        <input type="text" name="skill2" class="form-control" placeholder="Web Developer" id="skill2" required>    
+                    </div>
+                </div>
+                
+                <div class="bottomSkills">
+                    <div class="info">
+                        <label for="skill3" class="form-label">Enter Your Skills</label>
+                        <input type="text" name="skill3" class="form-control" placeholder="Web Developer" id="skill3">    
+                    </div>
+                    
+                    <div class="info">
+                        <label for="skill4" class="form-label">Enter Your Skills</label>
+                        <input type="text" name="skill4" class="form-control" placeholder="Web Developer" id="skill4">    
+                    </div>
+                </div>
+                
+                <div class="nav">
+                    <button type="button" class="btn btn-danger">Back&nbsp;<i class="fa-solid fa-arrow-left"></i></button>
+                    <button type="button" class="btn btn-success">Next&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            
+            <div class="about">
+                <div class="info">
+                    <h6>Please Write Something About You</h6>
+                    <textarea class="form-control" name="about" id="about" cols="30" rows="10" placeholder="I'm a recent graduate from Newcastle University!"></textarea>
+                </div>
+                
+                <div class="nav">
+                    <button type="button" class="btn btn-danger">Back&nbsp;<i class="fa-solid fa-arrow-left"></i></button>
+                    <button type="button" class="btn btn-success">Next&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            
+            <div class="social">
+                <div class="info">
+                    <label for="linkedin" class="form-label">Linkedin <span>*</span></label>
+                    <input type="text" name="linkedin" class="form-control" placeholder="linkedin.com/in/benjamin-grant-72381ujy3u" id="linkedin" required>
+                </div>
+                
+                <div class="info">
+                    <label for="facebook" class="form-label">Facebook (optional)</label>
+                    <input type="text" name="facebook" class="form-control" placeholder="https://www.facebook.com/xyz" id="facebook">
+                </div>
+                
+                <div class="info">
+                    <label for="twitter" class="form-label">Twitter (optional)</label>
+                    <input type="text" name="twitter" class="form-control" placeholder="www.twitter.com/username" id="twitter">
+                </div>
+                
+                <div class="nav">
+                    <button type="button" class="btn btn-danger">Back&nbsp;<i class="fa-solid fa-arrow-left"></i></button>
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                </div>
+            </div>
+          </form>
+        </div>
+        <script src="/static/Js/scriptForm.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+html {
+    background-color: white;
+}
+
+body {
+    background: url("https://img.freepik.com/free-vector/dark-black-background-design-with-stripes_1017-38064.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    color: white;
+    margin: auto;
+    font-family: "Syne";
+}
+
+.frames {
+    padding: 25px 50px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.header > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.frames > * {
+    margin-bottom: 20px;
+}
+
+.fname, .lname {
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-stretch: ultra-condensed;
+    line-height: 110%;
+}
+
+.fname {
+    margin-top: 20px;
+}
+
+.lname {
+    margin-bottom: 5px;
+}
+
+.designation {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.about {
+    width: 85%;
+}
+
+.about > p {
+    letter-spacing: 0.5px;
+}
+
+.frames > * > h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.education {
+    width: 60%;
+}
+
+.edu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edu > *, .skills > * {
+    padding-left: 10px;
+    border-left: 5px solid #777;
+}
+
+.edu > * > p {
+    margin: 10px;
+}
+
+.footer {
+    display: flex;
+}
+
+.sk, .social {
+    width: 50%;
+}
+
+.skills > * {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #777;
+}

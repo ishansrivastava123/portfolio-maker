@@ -1,0 +1,105 @@
+body {
+    background: url("/static/Images/form-bg.jpg") no-repeat center center fixed;
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(8px);
+}
+
+span {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.container > h1 {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    color: white;
+    text-shadow: 0 0 10px black;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid white;
+    font-size: 2rem;
+}
+
+form {
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+form > * {
+    color: white;
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    display: block;
+}
+
+.active > *:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.form-control:focus, .form-control:active {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: #bbb;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: end;
+}
+
+.nav, .nav1 > * {
+    transition: all 0.3s ease;
+}
+
+.nav, .nav1 > *:hover {
+    transform: scale(1.1);
+}
+
+.form-label {
+    margin: 5px;
+}
+
+.topSkills, .bottomSkills {
+    /* width: 90%; */
+    display: flex;
+    justify-content: space-between;
+}

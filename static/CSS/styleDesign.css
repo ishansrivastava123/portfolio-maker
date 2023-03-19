@@ -1,0 +1,42 @@
+body {
+    background: url(../Images/design-bg.jfif
+    ) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container > * > h1 {
+    margin: 30px auto 50px;
+    color: black;
+    text-shadow: 0 0 10px red;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row > * {
+    text-align: center;
+}
+
+.row > * > img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 120px;
+    margin-top: 20px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px 0 white;
+}
