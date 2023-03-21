@@ -45,9 +45,9 @@ def upload():
 
         key = uuid.uuid1()
         img = request.files["dp"]
-        img.save(f"static/Images/SavedPics/{img.filename}")
+        img.save(f"static/SavedPics/{img.filename}")
         img_new_name = f"{key}{img.filename}"
-        os.rename(f"static/Images/SavedPics/{img.filename}", f"static/Images/SavedPics/{img_new_name}")
+        os.rename(f"static/SavedPics/{img.filename}", f"static/SavedPics/{img_new_name}")
 
     return render_template(design_name,
                            fname = firstname,
@@ -68,11 +68,11 @@ def upload():
                            sk4 = skill4,
                            img = img_new_name)
 
-# def delete():
-#     files = os.listdir("static/Images/SavedPics")
-#     for f in files:
-#         os.remove(f"static/Images/SavedPics/{f}")
+def delete():
+    files = os.listdir("static/SavedPics")
+    for f in files:
+        os.remove(f"static/SavedPics/{f}")
 
 if __name__ == "__main__":
-    # schedule.every().hour.do(delete)
+    schedule.every().hour.do(delete)
     app.run(debug = True)
