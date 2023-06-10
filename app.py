@@ -75,4 +75,4 @@ def delete():
 
 if __name__ == "__main__":
     schedule.every().hour.do(delete)
-    app.run(debug = True)
+    app.run(debug = False, host = '0.0.0.0')
